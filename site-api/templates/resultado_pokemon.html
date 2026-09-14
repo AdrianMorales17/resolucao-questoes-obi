@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block titulo %}
+    Resultado Pokémon
+{% endblock %}
+
+{% block conteudo %}
+
+    <h2 class="text-center mb-4">
+        {{ pokemon.nome }}
+    </h2>
+
+    <img src="{{ pokemon.imagem }}">
+
+    <p><strong>Tipos:</strong></p>
+
+    <ul>
+
+        {% for tipo in pokemon.tipos %}
+
+            <li>{{ tipo }}</li>
+
+        {% endfor %}
+
+    </ul>
+
+    <p><strong>Altura:</strong> {{ pokemon.altura }} m</p>
+
+    <p><strong>Peso:</strong> {{ pokemon.peso }} kg</p>
+
+    <div class="text-center mt-4">
+
+        <a href="/pokemon" class="btn btn-secondary">
+            Voltar
+        </a>
+
+    </div>
+
+{% endblock %}

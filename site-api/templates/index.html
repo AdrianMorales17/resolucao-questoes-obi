@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block titulo %}
+Home
+{% endblock %}
+
+{% block conteudo %}
+
+<h2 class="text-center mb-4">
+    Escolha uma API
+</h2>
+
+<div class="d-grid gap-3">
+
+    <a href="/pokemon" class="btn btn-dark">
+        🎮 Pokémon API
+    </a>
+
+    <a href="/paises" class="btn btn-dark">
+        🌎 Países API
+    </a>
+
+</div>
+
+{% endblock %}

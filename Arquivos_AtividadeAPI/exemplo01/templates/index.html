@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organização do Churrasco</title>
+</head>
+<body>
+   <h1>Lista de Itens:</h1>
+    <form action="{{url_for('principal')}}" method="post">
+        <div>
+            <label for="item">Informe o item:</label>
+            <input type="text" name="item" required/>
+        </div>
+        <button>Adicionar</button>
+    </form>
+   <hr>
+   <ol>
+        {% for item in itenschurrasco %} 
+        <li>{{item}}</li>
+        {% endfor %}
+   </ol>
+</body>
+</html>
