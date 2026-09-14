@@ -8,7 +8,6 @@ Este repositório contém a resolução de diversos exercícios da **Olimpíada 
 
 O objetivo deste espaço é centralizar a lógica, os algoritmos e as soluções desenvolvidas para treinar maratona de programação e aprimorar habilidades em estruturas de dados e resolução de problemas.
 
-### Fins Acadêmicos e Educacionais
 > **Nota:** Este repositório foi criado **exclusivamente para fins acadêmicos, de estudo e aprendizado pessoal**. Todo o código aqui presente serve como registro de evolução contínua e fonte de consulta para estudos futuros.
 
 ---
@@ -23,7 +22,7 @@ O objetivo deste espaço é centralizar a lógica, os algoritmos e as soluções
 
 ## Como Executar os Exercícios
 
-### *A versão mais recente do python deve estar instalada!
+##### *A versão mais recente do python deve estar instalada!
 
 1. Clone o repositório:
    ```bash
