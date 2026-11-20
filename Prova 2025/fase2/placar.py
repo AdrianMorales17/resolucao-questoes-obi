@@ -1,34 +1,32 @@
-P = list(map(int, input().split()))
-C = list(map(int, input().split()))
-i = 0 
-PI = 1
-CI = 1
-GP = 0
-GC = 0
-TG = P[0] + C[0]
-print (0 , 0)
-for i in range(TG):
-    if(CI < C[0] and PI < P[0]):
-        if(P[PI] < C[CI]):
-            PI=PI + 1
-            GP= GP + 1
-            print(GP , GC)
-        else:
-            CI= CI + 1
-            GC= GC + 1
-            print(GP , GC)
+linha_p = list(map(int, input().split()))
+P = linha_p[0]
+tempos_p = linha_p[1:]
+
+linha_c = list(map(int, input().split()))
+C = linha_c[0]
+tempos_c = linha_c[1:]
+
+pi = 0
+ci = 0
+
+gp = 0
+gc = 0
+
+print(gp, gc)
+
+while pi < P or ci < C:
+    if pi >= P:
+        ci += 1
+        gc += 1
+    elif ci >= C:
+        pi += 1
+        gp += 1
     else:
-        if(CI > C[0]):
-            PI=PI + 1
-            GP= GP + 1
-            print(GP , GC)
+        if tempos_p[pi] < tempos_c[ci]:
+            pi += 1
+            gp += 1
         else:
-            CI= CI + 1
-            GC= GC + 1
-            print(GP , GC)
-    i=+1 
-
-if(TG == 0):
-    print(0 , 0)
-
-    
+            ci += 1
+            gc += 1
+            
+    print(gp, gc)
